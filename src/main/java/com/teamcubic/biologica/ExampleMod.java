@@ -30,6 +30,7 @@ import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(biologica.MODID)
+git add .
 public class Biologica
 {
     // Define mod id in a common place for everything to reference
