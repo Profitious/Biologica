@@ -11,6 +11,7 @@ import static xyz.sillyjune.biologica.Food.*;
 public class Items {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
     public static final RegistrySupplier<Item> MAMMOTH_MEAT = ITEMS.register("mammoth_meat", () -> new Item(new Item.Properties().food(MAMMOTH_MEAT_FOOD)));
+    public static final RegistrySupplier<Item> MAHI_MAHI_MEAT = ITEMS.register("mahi_mahi_meat", () -> new Item(new Item.Properties().food(MAHI_MAHI_MEAT_FOOD)));
 
 
     public static final RegistrySupplier<Item> OX_HORN = ITEMS.register("ox_horn", () -> new Item(new Item.Properties()));
