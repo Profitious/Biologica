@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "biologica",
+  "version": "${version}",
+  "name": "Biologica",
+  "description": "",
+  "authors": [
+    ""
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MPL-2.0",
+  "icon": "assets/biologica/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.sillyjune.biologica.fabric.BiologicaFabric"
+    ],
+    "client": [
+      "xyz.sillyjune.biologica.fabric.client.BiologicaFabricClient"
+    ]
+  },
+  "mixins": [
+    "biologica.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
