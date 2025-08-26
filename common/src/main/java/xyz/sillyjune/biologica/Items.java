@@ -6,9 +6,13 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
 
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
+import static xyz.sillyjune.biologica.Food.*;
 
 public class Items {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
+    public static final RegistrySupplier<Item> MAMMOTH_MEAT = ITEMS.register("mammoth_meat", () -> new Item(new Item.Properties().food(MAMMOTH_MEAT_FOOD)));
+
+
     public static final RegistrySupplier<Item> OX_HORN = ITEMS.register("ox_horn", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> FANG = ITEMS.register("fang", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> CHITIN = ITEMS.register("chitin", () -> new Item(new Item.Properties()));
