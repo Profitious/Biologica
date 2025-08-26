@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
 #issueTrackerURL = ""
-license = "Mozilla Public License 2.0"
+license = "ALL RIGHTS RESERVED"
 
 [[mods]]
 modId = "biologica"
