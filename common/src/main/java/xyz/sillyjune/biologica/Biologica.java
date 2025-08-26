@@ -5,5 +5,6 @@ public final class Biologica {
 
     public static void init() {
         // Write common init code here.
+        Items.register();
     }
 }
