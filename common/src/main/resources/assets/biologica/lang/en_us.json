@@ -1,4 +1,10 @@
 {
+  "category.biologica.food": "Biologica - Food",
+  "category.biologica.crafting": "Biologica - Crafting",
+  "category.biologica.tools": "Biologica - Tools",
+  "category.biologica.blocks": "Biologica - Blocks",
+  "category.biologica.natural": "Biologica - Nature",
+
   "item.biologica.mammoth_meat": "Cooked Mammoth Meat",
   "item.biologica.mahi_mahi_meat": "Cooked Mahi-Mahi Meat",
   "item.biologica.sauropod_meat": "Cooked Sauropod Meat",
@@ -25,7 +31,6 @@
   "item.biologica.nopal": "Nopal",
   "item.biologica.prickly_pear_fruit": "Prickly Pear Fruit",
   "item.biologica.cactus_stew": "Cactus Stew",
-
 
   "item.biologica.ox_horn": "Ox Horn",
   "item.biologica.fang": "Fang",
