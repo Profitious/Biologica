@@ -48,6 +48,15 @@ public class Blocks {
     public static RegistrySupplier<Block> HORSETAILS = BLOCKS.register("horsetails", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
     public static RegistrySupplier<Item> HORSETAILS_ITEM = ITEMS.register("horsetails", () -> new BlockItem(HORSETAILS.get(), new Item.Properties().arch$tab(NATURE_TAB)));
 
+    public static RegistrySupplier<Block> DRACAENA = BLOCKS.register("dracaena", () -> new TallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static RegistrySupplier<Item> DRACAENA_ITEM = ITEMS.register("dracaena", () -> new BlockItem(DRACAENA.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> ALOE_VERA = BLOCKS.register("aloe_vera", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static RegistrySupplier<Item> ALOE_VERA_ITEM = ITEMS.register("aloe_vera", () -> new BlockItem(ALOE_VERA.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> RUBBER_PLANT = BLOCKS.register("rubber_plant", () -> new TallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static RegistrySupplier<Item> RUBBER_PLANT_ITEM = ITEMS.register("rubber_plant", () -> new BlockItem(RUBBER_PLANT.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
     public static RegistrySupplier<Block> CRANBERRY_BUSH = BLOCKS.register("cranberry_bush", () -> new CranberryBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
     public static final RegistrySupplier<Item> CRANBERRIES = ITEMS.register("cranberries", () -> new BlockItem(CRANBERRY_BUSH.get(), new Item.Properties().food(CRANBERRIES_FOOD).arch$tab(FOOD_TAB)));
 
