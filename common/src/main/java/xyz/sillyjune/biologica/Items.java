@@ -21,6 +21,14 @@ public class Items {
     public static final RegistrySupplier<Item> SAUROPOD_MEAT = ITEMS.register("sauropod_meat", () -> new Item(new Item.Properties().food(SAUROPOD_MEAT_FOOD)));
     public static final RegistrySupplier<Item> RAW_SAUROPOD_MEAT = ITEMS.register("raw_sauropod_meat", () -> new Item(new Item.Properties().food(RAW_SAUROPOD_MEAT_FOOD)));
 
+    public static final RegistrySupplier<Item> ELEPHANT_MEAT = ITEMS.register("elephant_meat", () -> new Item(new Item.Properties().food(ELEPHANT_MEAT_FOOD)));
+    public static final RegistrySupplier<Item> RAW_ELEPHANT_MEAT = ITEMS.register("raw_elephant_meat", () -> new Item(new Item.Properties().food(RAW_ELEPHANT_MEAT_FOOD)));
+
+    public static final RegistrySupplier<Item> SHARK_MEAT = ITEMS.register("shark_meat", () -> new Item(new Item.Properties().food(SHARK_MEAT_FOOD)));
+    public static final RegistrySupplier<Item> RAW_SHARM_MEAT = ITEMS.register("raw_shark_meat", () -> new Item(new Item.Properties().food(RAW_SHARK_MEAT_FOOD)));
+
+    public static final RegistrySupplier<Item> CRANBERRIES = ITEMS.register("cranberries", () -> new Item(new Item.Properties().food(CRANBERRIES_FOOD)));
+
     public static final RegistrySupplier<Item> OX_HORN = ITEMS.register("ox_horn", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> FANG = ITEMS.register("fang", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> CHITIN = ITEMS.register("chitin", () -> new Item(new Item.Properties()));
