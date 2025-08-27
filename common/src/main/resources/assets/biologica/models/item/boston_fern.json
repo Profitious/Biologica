@@ -1,3 +1,6 @@
 {
-  "parent": "biologica:block/boston_fern"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "biologica:item/boston_fern"
+  }
 }

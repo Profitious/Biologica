@@ -9,7 +9,7 @@ import static xyz.sillyjune.biologica.Biologica.MOD_ID;
 import static xyz.sillyjune.biologica.Food.*;
 
 public class Items {
-    private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
 
     public static final RegistrySupplier<Item> MAMMOTH_MEAT = ITEMS.register("mammoth_meat", () -> new Item(new Item.Properties().food(MAMMOTH_MEAT_FOOD)));
     public static final RegistrySupplier<Item> RAW_MAMMOTH_MEAT = ITEMS.register("raw_mammoth_meat", () -> new Item(new Item.Properties().food(RAW_MAMMOTH_MEAT_FOOD)));
