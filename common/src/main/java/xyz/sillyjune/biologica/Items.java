@@ -3,9 +3,11 @@ package xyz.sillyjune.biologica;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.InstrumentItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
+import xyz.sillyjune.biologica.Util.InstrumentTags;
+import xyz.sillyjune.biologica.Util.Tiers;
 
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
 import static xyz.sillyjune.biologica.Food.*;
@@ -54,6 +56,7 @@ public class Items {
     public static final RegistrySupplier<Item> ANTLERS = ITEMS.register("antlers", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> TERROR_BIRD_FEATHER = ITEMS.register("terror_bird_feather", () -> new Item(new Item.Properties()));
 
+    public static final RegistrySupplier<Item> MARACAS = ITEMS.register("maracas", () ->new InstrumentItem((new Item.Properties()).stacksTo(1), InstrumentTags.MARACAS));
     public static final RegistrySupplier<Item> MACUHALUTI = ITEMS.register("machuhaluti", () -> new SwordItem(Tiers.MACUHALUTI_TIER, 0, -2.0f, new Item.Properties()));
     public static final RegistrySupplier<Item> CLAW_SWORD = ITEMS.register("claw_sword", () -> new SwordItem(Tiers.CLAW_TIER, 0, -2.0f, new Item.Properties()));
 
