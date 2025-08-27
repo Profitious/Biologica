@@ -4,8 +4,7 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.renderer.RenderType;
 
-import static xyz.sillyjune.biologica.Blocks.BOSTON_FERN;
-import static xyz.sillyjune.biologica.Blocks.CRANBERRY_BUSH;
+import static xyz.sillyjune.biologica.Blocks.*;
 
 public final class BiologicaFabricClient implements ClientModInitializer {
     @Override
@@ -13,7 +12,8 @@ public final class BiologicaFabricClient implements ClientModInitializer {
         // This entrypoint is suitable for setting up client-specific logic, such as rendering.
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(),
                 BOSTON_FERN.get(),
-                CRANBERRY_BUSH.get()
+                CRANBERRY_BUSH.get(),
+                BLUE_BONNET.get()
         );
     }
 }
