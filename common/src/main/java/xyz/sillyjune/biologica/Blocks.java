@@ -7,12 +7,14 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.TallFlowerBlock;
 import net.minecraft.world.level.block.TallGrassBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import xyz.sillyjune.biologica.Block.CranberryBushBlock;
+import xyz.sillyjune.biologica.Block.OcotilloBlock;
 
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
 import static xyz.sillyjune.biologica.Food.CRANBERRIES_FOOD;
@@ -36,6 +38,15 @@ public class Blocks {
 
     public static RegistrySupplier<Block> FLAMINGO_FLOWER = BLOCKS.register("flamingo_flower", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
     public static RegistrySupplier<Item> FLAMINGO_FLOWER_ITEM = ITEMS.register("flamingo_flower", () -> new BlockItem(FLAMINGO_FLOWER.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> LAVENDER = BLOCKS.register("lavender", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static RegistrySupplier<Item> LAVENDER_ITEM = ITEMS.register("lavender", () -> new BlockItem(LAVENDER.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> OCOTILLO = BLOCKS.register("ocotillo", () -> new OcotilloBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static RegistrySupplier<Item> OCOTILLO_ITEM = ITEMS.register("ocotillo", () -> new BlockItem(OCOTILLO.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> HORSETAILS = BLOCKS.register("horsetails", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static RegistrySupplier<Item> HORSETAILS_ITEM = ITEMS.register("horsetails", () -> new BlockItem(HORSETAILS.get(), new Item.Properties().arch$tab(NATURE_TAB)));
 
     public static RegistrySupplier<Block> CRANBERRY_BUSH = BLOCKS.register("cranberry_bush", () -> new CranberryBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
     public static final RegistrySupplier<Item> CRANBERRIES = ITEMS.register("cranberries", () -> new BlockItem(CRANBERRY_BUSH.get(), new Item.Properties().food(CRANBERRIES_FOOD).arch$tab(FOOD_TAB)));
