@@ -53,6 +53,7 @@ public class Items {
     public static final RegistrySupplier<Item> MICRORAPTOR_FEATHER = ITEMS.register("microraptor_feather", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> CLAW = ITEMS.register("claw", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> ANTLERS = ITEMS.register("antlers", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> TERROR_BIRD_FEATHER = ITEMS.register("terror_bird_feather", () -> new Item(new Item.Properties()));
 
     public static void register() {
         ITEMS.register();
