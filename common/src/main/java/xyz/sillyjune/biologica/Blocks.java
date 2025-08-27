@@ -5,10 +5,7 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.TallFlowerBlock;
-import net.minecraft.world.level.block.TallGrassBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -51,7 +48,7 @@ public class Blocks {
     public static RegistrySupplier<Block> DRACAENA = BLOCKS.register("dracaena", () -> new TallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
     public static RegistrySupplier<Item> DRACAENA_ITEM = ITEMS.register("dracaena", () -> new BlockItem(DRACAENA.get(), new Item.Properties().arch$tab(NATURE_TAB)));
 
-    public static RegistrySupplier<Block> ALOE_VERA = BLOCKS.register("aloe_vera", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static RegistrySupplier<Block> ALOE_VERA = BLOCKS.register("aloe_vera", () -> new DeadBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
     public static RegistrySupplier<Item> ALOE_VERA_ITEM = ITEMS.register("aloe_vera", () -> new BlockItem(ALOE_VERA.get(), new Item.Properties().arch$tab(NATURE_TAB)));
 
     public static RegistrySupplier<Block> RUBBER_PLANT = BLOCKS.register("rubber_plant", () -> new TallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
