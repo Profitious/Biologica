@@ -4,6 +4,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
 import static xyz.sillyjune.biologica.Food.*;
@@ -27,7 +28,7 @@ public class Items {
     public static final RegistrySupplier<Item> PUFFIN_BEAK = ITEMS.register("puffin_beak", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> RATTLE = ITEMS.register("rattle", () -> new Item(new Item.Properties()));
 
-    public static final RegistrySupplier<Item> MACUHALUTI = ITEMS.register("machuhaluti", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> MACUHALUTI = ITEMS.register("machuhaluti", () -> new SwordItem(Tiers.MACUHALUTI_TIER, 0, -2.0f, new Item.Properties()));
     public static final RegistrySupplier<Item> MICRORAPTOR_FEATHER = ITEMS.register("microraptor_feather", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> CLAW = ITEMS.register("claw", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> ANTLERS = ITEMS.register("antlers", () -> new Item(new Item.Properties()));
