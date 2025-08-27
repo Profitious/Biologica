@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.TallGrassBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import xyz.sillyjune.biologica.Block.CranberryBushBlock;
@@ -16,8 +17,7 @@ import xyz.sillyjune.biologica.Block.CranberryBushBlock;
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
 import static xyz.sillyjune.biologica.Food.CRANBERRIES_FOOD;
 import static xyz.sillyjune.biologica.Items.ITEMS;
-import static xyz.sillyjune.biologica.Util.Tabs.FOOD_TAB;
-import static xyz.sillyjune.biologica.Util.Tabs.NATURE_TAB;
+import static xyz.sillyjune.biologica.Util.Tabs.*;
 
 public class Blocks {
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(MOD_ID, Registries.BLOCK);
@@ -39,6 +39,12 @@ public class Blocks {
 
     public static RegistrySupplier<Block> CRANBERRY_BUSH = BLOCKS.register("cranberry_bush", () -> new CranberryBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
     public static final RegistrySupplier<Item> CRANBERRIES = ITEMS.register("cranberries", () -> new BlockItem(CRANBERRY_BUSH.get(), new Item.Properties().food(CRANBERRIES_FOOD).arch$tab(FOOD_TAB)));
+
+    public static RegistrySupplier<Block> VOLCANIC_COBBLESTONE = BLOCKS.register("volcanic_cobblestone", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
+    public static final RegistrySupplier<Item> VOLCANIC_COBBLESTONE_ITEM = ITEMS.register("volcanic_cobblestone", () -> new BlockItem(VOLCANIC_COBBLESTONE.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
+
+    public static RegistrySupplier<Block> VOLCANIC_STONE = BLOCKS.register("volcanic_stone", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
+    public static final RegistrySupplier<Item> VOLCANIC_STONE_ITEM = ITEMS.register("volcanic_stone", () -> new BlockItem(VOLCANIC_STONE.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
 
     public static void register() {
         BLOCKS.register();
