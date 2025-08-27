@@ -33,5 +33,9 @@ public class Food {
     public static final FoodProperties ELK_MEAT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
     public static final FoodProperties RAW_ELK_MEAT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
 
+    public static final FoodProperties NOPAL_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
 
+    public static final FoodProperties CACTUS_STEW_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
+
+    public static final FoodProperties PRICKLY_PEAR_FRUIT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
 }

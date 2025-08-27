@@ -44,6 +44,12 @@ public class Items {
 
     public static final RegistrySupplier<Item> CRANBERRY_STEW = ITEMS.register("cranberry_stew", () -> new Item(new Item.Properties().food(CRANBERRY_STEW_FOOD)));
 
+    public static final RegistrySupplier<Item> CACTUS_STEW = ITEMS.register("cactus_stew", () -> new Item(new Item.Properties().food(CACTUS_STEW_FOOD)));
+
+    public static final RegistrySupplier<Item> PRICKLY_PEAR_FRUIT = ITEMS.register("prickly_pear_fruit", () -> new Item(new Item.Properties().food(PRICKLY_PEAR_FRUIT_FOOD)));
+
+    public static final RegistrySupplier<Item> NOPAL = ITEMS.register("nopal", () -> new Item(new Item.Properties().food(NOPAL_FOOD)));
+
     public static final RegistrySupplier<Item> OX_HORN = ITEMS.register("ox_horn", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> FANG = ITEMS.register("fang", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> CHITIN = ITEMS.register("chitin", () -> new Item(new Item.Properties()));
