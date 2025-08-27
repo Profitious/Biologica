@@ -15,7 +15,8 @@ public final class BiologicaFabricClient implements ClientModInitializer {
                 CRANBERRY_BUSH.get(),
                 BLUE_BONNET.get(),
                 HELICONIA.get(),
-                PEACE_LILY.get()
+                PEACE_LILY.get(),
+                FLAMINGO_FLOWER.get()
         );
     }
 }

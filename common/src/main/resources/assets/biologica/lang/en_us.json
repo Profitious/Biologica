@@ -47,8 +47,13 @@
   "item.biologica.terror_bird_feather": "Terror Bird Feather",
   "item.biologica.maracas": "Maracas",
 
+  "block.biologica.volcanic_stone": "Volcanic Stone",
+  "block.biologica.volcanic_cobblestone": "Volcanic Cobblestone",
+
   "block.biologica.boston_fern": "Boston Fern",
   "block.biologica.blue_bonnet": "Blue Bonnet",
   "block.biologica.heliconia": "Heliconia",
-  "block.biologica.peace_lily": "Peace Lily"
+  "block.biologica.peace_lily": "Peace Lily",
+  "block.biologica.flamingo_flower": "Flamingo Flower"
+
 }
