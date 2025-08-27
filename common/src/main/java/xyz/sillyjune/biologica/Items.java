@@ -49,11 +49,13 @@ public class Items {
     public static final RegistrySupplier<Item> PUFFIN_BEAK = ITEMS.register("puffin_beak", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> RATTLE = ITEMS.register("rattle", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> SHARK_FIN = ITEMS.register("shark_fin", () -> new Item(new Item.Properties()));
-    public static final RegistrySupplier<Item> MACUHALUTI = ITEMS.register("machuhaluti", () -> new SwordItem(Tiers.MACUHALUTI_TIER, 0, -2.0f, new Item.Properties()));
     public static final RegistrySupplier<Item> MICRORAPTOR_FEATHER = ITEMS.register("microraptor_feather", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> CLAW = ITEMS.register("claw", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> ANTLERS = ITEMS.register("antlers", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> TERROR_BIRD_FEATHER = ITEMS.register("terror_bird_feather", () -> new Item(new Item.Properties()));
+
+    public static final RegistrySupplier<Item> MACUHALUTI = ITEMS.register("machuhaluti", () -> new SwordItem(Tiers.MACUHALUTI_TIER, 0, -2.0f, new Item.Properties()));
+    public static final RegistrySupplier<Item> CLAW_SWORD = ITEMS.register("claw_sword", () -> new SwordItem(Tiers.CLAW_TIER, 0, -2.0f, new Item.Properties()));
 
     public static void register() {
         ITEMS.register();

@@ -11,9 +11,11 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 import static net.minecraft.world.item.Items.OBSIDIAN;
+import static xyz.sillyjune.biologica.Items.CLAW;
 
 public enum Tiers implements Tier {
-    MACUHALUTI_TIER(0, 550, 0.5F, 5.0F, 2, () -> Ingredient.of(OBSIDIAN));
+    MACUHALUTI_TIER(0, 550, 0.5F, 5.0F, 2, () -> Ingredient.of(OBSIDIAN)),
+    CLAW_TIER(0, 550, 0.5F, 5.0F, 2, () -> Ingredient.of(CLAW.get()));
 
     private final int level;
     private final int uses;
