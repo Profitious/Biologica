@@ -2,7 +2,11 @@
   "item.biologica.mammoth_meat": "Cooked Mammoth Meat",
   "item.biologica.mahi_mahi_meat": "Cooked Mahi-Mahi Meat",
   "item.biologica.sauropod_meat": "Cooked Sauropod Meat",
+  "item.biologica.elephant_meat": "Cooked Elephant Meat",
+  "item.biologica.shark_meat": "Cooked Shark Meat",
 
+  "item.biologica.raw_elephant_meat": "Raw Elephant Meat",
+  "item.biologica.raw_shark_meat": "Raw Shark meat",
   "item.biologica.raw_mammoth_meat": "Raw Mammoth Meat",
   "item.biologica.raw_mahi_mahi_meat": "Raw Mahi-Mahi Meat",
   "item.biologica.raw_sauropod_meat": "Raw Sauropod Meat",
@@ -17,6 +21,8 @@
   "item.biologica.antlers": "Antlers",
   "item.biologica.claw": "Claw",
   "item.biologica.microraptor_feather": "Microraptor Feather",
+  "item.biologica.cranberries": "Cranberries",
+
 
   "block.biologica.boston_fern": "Boston Fern"
 }
