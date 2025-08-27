@@ -13,7 +13,8 @@ public final class BiologicaFabricClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(),
                 BOSTON_FERN.get(),
                 CRANBERRY_BUSH.get(),
-                BLUE_BONNET.get()
+                BLUE_BONNET.get(),
+                HELICONIA.get()
         );
     }
 }
