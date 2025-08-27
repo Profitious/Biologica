@@ -6,6 +6,8 @@
   "item.biologica.shark_meat": "Cooked Shark Meat",
   "item.biologica.dinosaur_meat": "Cooked Dinosaur Meat",
   "item.biologica.bear_meat": "Cooked Bear Meat",
+  "item.biologica.elk_meat": "Cooked Elk Meat",
+  "item.biologica.terror_bird_meat": "Cooked Terror Bird Meat",
 
   "item.biologica.raw_dinosaur_meat": "Raw Dinosaur Meat",
   "item.biologica.raw_bear_meat": "Raw Bear Meat",
@@ -14,6 +16,8 @@
   "item.biologica.raw_mammoth_meat": "Raw Mammoth Meat",
   "item.biologica.raw_mahi_mahi_meat": "Raw Mahi-Mahi Meat",
   "item.biologica.raw_sauropod_meat": "Raw Sauropod Meat",
+  "item.biologica.raw_elk_meat": "Raw Elk Meat",
+  "item.biologica.raw_terror_bird_meat": "Raw Terror Bird Meat",
 
   "item.biologica.cranberry_stew": "Cranberry Stew",
   "item.biologica.cranberries": "Cranberry",
