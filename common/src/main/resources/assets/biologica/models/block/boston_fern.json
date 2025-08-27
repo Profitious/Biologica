@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "biologica:block/bostonfern"
+    "cross": "biologica:block/boston_fern"
   }
 }
-
