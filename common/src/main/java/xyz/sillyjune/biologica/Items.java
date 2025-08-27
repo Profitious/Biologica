@@ -28,6 +28,7 @@ public class Items {
     public static final RegistrySupplier<Item> RAW_SHARM_MEAT = ITEMS.register("raw_shark_meat", () -> new Item(new Item.Properties().food(RAW_SHARK_MEAT_FOOD)));
 
     public static final RegistrySupplier<Item> CRANBERRIES = ITEMS.register("cranberries", () -> new Item(new Item.Properties().food(CRANBERRIES_FOOD)));
+    public static final RegistrySupplier<Item> CRANBERRY_STEW = ITEMS.register("cranberry_stew", () -> new Item(new Item.Properties().food(CRANBERRY_STEW_FOOD)));
 
     public static final RegistrySupplier<Item> OX_HORN = ITEMS.register("ox_horn", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> FANG = ITEMS.register("fang", () -> new Item(new Item.Properties()));
@@ -35,7 +36,7 @@ public class Items {
     public static final RegistrySupplier<Item> RHINO_HORN = ITEMS.register("rhino_horn", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> PUFFIN_BEAK = ITEMS.register("puffin_beak", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> RATTLE = ITEMS.register("rattle", () -> new Item(new Item.Properties()));
-
+    public static final RegistrySupplier<Item> SHARK_FIN = ITEMS.register("shark_fin", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> MACUHALUTI = ITEMS.register("machuhaluti", () -> new SwordItem(Tiers.MACUHALUTI_TIER, 0, -2.0f, new Item.Properties()));
     public static final RegistrySupplier<Item> MICRORAPTOR_FEATHER = ITEMS.register("microraptor_feather", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> CLAW = ITEMS.register("claw", () -> new Item(new Item.Properties()));

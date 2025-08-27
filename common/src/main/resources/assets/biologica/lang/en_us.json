@@ -11,6 +11,9 @@
   "item.biologica.raw_mahi_mahi_meat": "Raw Mahi-Mahi Meat",
   "item.biologica.raw_sauropod_meat": "Raw Sauropod Meat",
 
+  "item.biologica.cranberry_stew": "Cranberry Stew",
+  "item.biologica.cranberries": "Cranberry",
+
   "item.biologica.ox_horn": "Ox Horn",
   "item.biologica.fang": "Fang",
   "item.biologica.chitin": "Chitin",
@@ -21,8 +24,7 @@
   "item.biologica.antlers": "Antlers",
   "item.biologica.claw": "Claw",
   "item.biologica.microraptor_feather": "Microraptor Feather",
-  "item.biologica.cranberries": "Cranberries",
-
+  "item.biologica.shark_fin": "Shark Fin",
 
   "block.biologica.boston_fern": "Boston Fern"
 }
