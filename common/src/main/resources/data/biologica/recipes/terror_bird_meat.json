@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "biologica:raw_terror_bird_meat"
+  },
+  "result": "biologica:terror_bird_meat"
+}
