@@ -1,0 +1,18 @@
+{
+  "item.biologica.mammoth_meat": "Cooked Mammoth Meat",
+  "item.biologica.mahi_mahi_meat": "Cooked Mahi-Mahi Meat",
+  "item.biologica.sauropod_meat": "Cooked Sauropod Meat",
+
+  "item.biologica.raw_mammoth_meat": "Raw Mammoth Meat",
+  "item.biologica.raw_mahi_mahi_meat": "Raw Mahi-Mahi Meat",
+  "item.biologica.raw_sauropod_meat": "Raw Sauropod Meat",
+
+  "item.biologica.ox_horn": "Ox Horn",
+  "item.biologica.fang": "Fang",
+  "item.biologica.chitin": "Chitin",
+  "item.biologica.rhino_horn": "Rhino Horn",
+  "item.biologica.puffin_beak": "Puffin Beak",
+  "item.biologica.rattle": "Rattle",
+
+  "block.biologica.boston_fern": "Boston Fern"
+}
