@@ -7,9 +7,6 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -23,10 +20,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
@@ -34,8 +29,6 @@ import org.jetbrains.annotations.NotNull;
 import static xyz.sillyjune.biologica.Blocks.CRANBERRIES;
 
 public class CranberryBushBlock extends BushBlock implements BonemealableBlock {
-    private static final float HURT_SPEED_THRESHOLD = 0.003F;
-    public static final int MAX_AGE = 3;
     public static final IntegerProperty AGE;
     private static final VoxelShape SAPLING_SHAPE;
     private static final VoxelShape MID_GROWTH_SHAPE;
@@ -44,11 +37,11 @@ public class CranberryBushBlock extends BushBlock implements BonemealableBlock {
         super(properties);
     }
 
-    public ItemStack getCloneItemStack(BlockGetter blockGetter, BlockPos blockPos, BlockState blockState) {
+    public @NotNull ItemStack getCloneItemStack(BlockGetter blockGetter, BlockPos blockPos, BlockState blockState) {
         return new ItemStack(CRANBERRIES.get());
     }
 
-    public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
+    public @NotNull VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
         if (blockState.getValue(AGE) == 0) {
             return SAPLING_SHAPE;
         } else {
@@ -70,20 +63,6 @@ public class CranberryBushBlock extends BushBlock implements BonemealableBlock {
 
     }
 
-    public void entityInside(BlockState blockState, Level level, BlockPos blockPos, Entity entity) {
-        if (entity instanceof LivingEntity && entity.getType() != EntityType.FOX && entity.getType() != EntityType.BEE) {
-            entity.makeStuckInBlock(blockState, new Vec3((double)0.8F, (double)0.75F, (double)0.8F));
-            if (!level.isClientSide && (Integer)blockState.getValue(AGE) > 0 && (entity.xOld != entity.getX() || entity.zOld != entity.getZ())) {
-                double d = Math.abs(entity.getX() - entity.xOld);
-                double e = Math.abs(entity.getZ() - entity.zOld);
-                if (d >= (double)0.003F || e >= (double)0.003F) {
-                    entity.hurt(level.damageSources().sweetBerryBush(), 1.0F);
-                }
-            }
-
-        }
-    }
-
     public @NotNull InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
         int i = blockState.getValue(AGE);
         boolean bl = i == 3;
@@ -103,11 +82,11 @@ public class CranberryBushBlock extends BushBlock implements BonemealableBlock {
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(new Property[]{AGE});
+        builder.add(AGE);
     }
 
     public boolean isValidBonemealTarget(LevelReader levelReader, BlockPos blockPos, BlockState blockState, boolean bl) {
-        return (Integer)blockState.getValue(AGE) < 3;
+        return blockState.getValue(AGE) < 3;
     }
 
     public boolean isBonemealSuccess(Level level, RandomSource randomSource, BlockPos blockPos, BlockState blockState) {
@@ -115,8 +94,8 @@ public class CranberryBushBlock extends BushBlock implements BonemealableBlock {
     }
 
     public void performBonemeal(ServerLevel serverLevel, RandomSource randomSource, BlockPos blockPos, BlockState blockState) {
-        int i = Math.min(3, (Integer)blockState.getValue(AGE) + 1);
-        serverLevel.setBlock(blockPos, (BlockState)blockState.setValue(AGE, i), 2);
+        int i = Math.min(3, blockState.getValue(AGE) + 1);
+        serverLevel.setBlock(blockPos, blockState.setValue(AGE, i), 2);
     }
 
     static {
