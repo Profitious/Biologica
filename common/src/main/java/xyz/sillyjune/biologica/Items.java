@@ -3,6 +3,7 @@ package xyz.sillyjune.biologica;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 
@@ -33,7 +34,6 @@ public class Items {
     public static final RegistrySupplier<Item> BEAR_MEAT = ITEMS.register("bear_meat", () -> new Item(new Item.Properties().food(BEAR_MEAT_FOOD)));
     public static final RegistrySupplier<Item> RAW_BEAR_MEAT = ITEMS.register("raw_bear_meat", () -> new Item(new Item.Properties().food(RAW_BEAR_MEAT_FOOD)));
 
-    public static final RegistrySupplier<Item> CRANBERRIES = ITEMS.register("cranberries", () -> new Item(new Item.Properties().food(CRANBERRIES_FOOD)));
     public static final RegistrySupplier<Item> CRANBERRY_STEW = ITEMS.register("cranberry_stew", () -> new Item(new Item.Properties().food(CRANBERRY_STEW_FOOD)));
 
     public static final RegistrySupplier<Item> OX_HORN = ITEMS.register("ox_horn", () -> new Item(new Item.Properties()));
