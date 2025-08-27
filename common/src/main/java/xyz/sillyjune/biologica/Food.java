@@ -18,6 +18,12 @@ public class Food {
     public static final FoodProperties SHARK_MEAT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
     public static final FoodProperties RAW_SHARK_MEAT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
 
+    public static final FoodProperties DINOSAUR_MEAT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
+    public static final FoodProperties RAW_DINOSAUR_MEAT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
+
+    public static final FoodProperties BEAR_MEAT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
+    public static final FoodProperties RAW_BEAR_MEAT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
+
     public static final FoodProperties CRANBERRIES_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
     public static final FoodProperties CRANBERRY_STEW_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
 

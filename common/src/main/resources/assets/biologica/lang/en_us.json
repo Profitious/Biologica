@@ -4,7 +4,11 @@
   "item.biologica.sauropod_meat": "Cooked Sauropod Meat",
   "item.biologica.elephant_meat": "Cooked Elephant Meat",
   "item.biologica.shark_meat": "Cooked Shark Meat",
+  "item.biologica.dinosaur_meat": "Cooked Dinosaur Meat",
+  "item.biologica.bear_meat": "Cooked Bear Meat",
 
+  "item.biologica.raw_dinosaur_meat": "Raw Dinosaur Meat",
+  "item.biologica.raw_bear_meat": "Raw Bear Meat",
   "item.biologica.raw_elephant_meat": "Raw Elephant Meat",
   "item.biologica.raw_shark_meat": "Raw Shark meat",
   "item.biologica.raw_mammoth_meat": "Raw Mammoth Meat",

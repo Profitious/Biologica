@@ -27,6 +27,12 @@ public class Items {
     public static final RegistrySupplier<Item> SHARK_MEAT = ITEMS.register("shark_meat", () -> new Item(new Item.Properties().food(SHARK_MEAT_FOOD)));
     public static final RegistrySupplier<Item> RAW_SHARM_MEAT = ITEMS.register("raw_shark_meat", () -> new Item(new Item.Properties().food(RAW_SHARK_MEAT_FOOD)));
 
+    public static final RegistrySupplier<Item> DINOSAUR_MEAT = ITEMS.register("dinosaur_meat", () -> new Item(new Item.Properties().food(DINOSAUR_MEAT_FOOD)));
+    public static final RegistrySupplier<Item> RAW_DINOSAUR_MEAT = ITEMS.register("raw_dinosaur_meat", () -> new Item(new Item.Properties().food(RAW_DINOSAUR_MEAT_FOOD)));
+
+    public static final RegistrySupplier<Item> BEAR_MEAT = ITEMS.register("bear_meat", () -> new Item(new Item.Properties().food(BEAR_MEAT_FOOD)));
+    public static final RegistrySupplier<Item> RAW_BEAR_MEAT = ITEMS.register("raw_bear_meat", () -> new Item(new Item.Properties().food(RAW_BEAR_MEAT_FOOD)));
+
     public static final RegistrySupplier<Item> CRANBERRIES = ITEMS.register("cranberries", () -> new Item(new Item.Properties().food(CRANBERRIES_FOOD)));
     public static final RegistrySupplier<Item> CRANBERRY_STEW = ITEMS.register("cranberry_stew", () -> new Item(new Item.Properties().food(CRANBERRY_STEW_FOOD)));
 
