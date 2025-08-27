@@ -16,6 +16,7 @@ import xyz.sillyjune.biologica.Block.CranberryBushBlock;
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
 import static xyz.sillyjune.biologica.Food.CRANBERRIES_FOOD;
 import static xyz.sillyjune.biologica.Items.ITEMS;
+import static xyz.sillyjune.biologica.Util.Tabs.FOOD_TAB;
 import static xyz.sillyjune.biologica.Util.Tabs.NATURE_TAB;
 
 public class Blocks {
@@ -25,7 +26,7 @@ public class Blocks {
     public static RegistrySupplier<Item> BOSTON_FERN_ITEM = ITEMS.register("boston_fern", () -> new BlockItem(BOSTON_FERN.get(), new Item.Properties().arch$tab(NATURE_TAB)));
 
     public static RegistrySupplier<Block> CRANBERRY_BUSH = BLOCKS.register("cranberry_bush", () -> new CranberryBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
-    public static final RegistrySupplier<Item> CRANBERRIES = ITEMS.register("cranberries", () -> new BlockItem(CRANBERRY_BUSH.get(), new Item.Properties().food(CRANBERRIES_FOOD)));
+    public static final RegistrySupplier<Item> CRANBERRIES = ITEMS.register("cranberries", () -> new BlockItem(CRANBERRY_BUSH.get(), new Item.Properties().food(CRANBERRIES_FOOD).arch$tab(FOOD_TAB)));
 
     public static void register() {
         BLOCKS.register();
