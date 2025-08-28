@@ -76,7 +76,6 @@ public class Blocks {
     public static final RegistrySupplier<Item> BARREL_CACTUS_ITEM = ITEMS.register("barrel_cactus", () -> new BlockItem(BARREL_CACTUS.get(), new Item.Properties().arch$tab(NATURE_TAB)));
 
     public static RegistrySupplier<Block> PRICKLY_PEAR = BLOCKS.register("prickly_pear", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
-    public static final RegistrySupplier<Item> PRICKLY_PEAR_ITEM = ITEMS.register("prickly_pear", () -> new BlockItem(PRICKLY_PEAR.get(), new Item.Properties().arch$tab(NATURE_TAB)));
 
     public static RegistrySupplier<Block> NIPA_PALM = BLOCKS.register("nipa_palm", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
     public static final RegistrySupplier<Item> NIPA_PALM_ITEM = ITEMS.register("nipa_palm_item", () -> new BlockItem(NIPA_PALM.get(), new Item.Properties().arch$tab(NATURE_TAB)));
