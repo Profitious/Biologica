@@ -22,7 +22,21 @@ public final class BiologicaFabricClient implements ClientModInitializer {
                 HORSETAILS.get(),
                 DRACAENA.get(),
                 ALOE_VERA.get(),
-                RUBBER_PLANT.get()
+                RUBBER_PLANT.get(),
+                SNAKE_PLANT.get(),
+                SPIDER_PLANT.get(),
+                CREEPING_FIG.get(),
+                SESUVIUM.get(),
+                GLASSWORT.get(),
+                BARREL_CACTUS.get(),
+                NIPA_PALM.get(),
+                ELEPHANT_EAR.get(),
+                YARROW.get(),
+                YUCCA.get(),
+                BRACKEN_FERNS.get(),
+                LAVA_CACTUS.get(),
+                SALT_BUSH.get(),
+                BOG_ROSEMARY.get()
         );
     }
 }

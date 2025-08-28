@@ -1,5 +1,10 @@
 {
   "variants": {
-    "": { "model": "biologica:block/yucca" }
+    "half=lower": {
+      "model": "biologica:block/yucca_bottom"
+    },
+    "half=upper": {
+      "model": "biologica:block/yucca_top"
+    }
   }
 }
