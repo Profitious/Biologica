@@ -57,6 +57,51 @@ public class Blocks {
     public static RegistrySupplier<Block> CRANBERRY_BUSH = BLOCKS.register("cranberry_bush", () -> new CranberryBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
     public static final RegistrySupplier<Item> CRANBERRIES = ITEMS.register("cranberries", () -> new BlockItem(CRANBERRY_BUSH.get(), new Item.Properties().food(CRANBERRIES_FOOD).arch$tab(FOOD_TAB)));
 
+    public static RegistrySupplier<Block> SNAKE_PLANT = BLOCKS.register("snake_plant", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> SNAKE_PLANT_ITEM = ITEMS.register("snake_plant", () -> new BlockItem(SNAKE_PLANT.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> SPIDER_PLANT = BLOCKS.register("spider_plant", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> SPIDER_PLANT_ITEM = ITEMS.register("spider_plant", () -> new BlockItem(SPIDER_PLANT.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> CREEPING_FIG = BLOCKS.register("creeping_fig", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> CREEPING_FIG_ITEM = ITEMS.register("creeping_fig", () -> new BlockItem(CREEPING_FIG.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> SESUVIUM = BLOCKS.register("sesuvium", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> SESUVIUM_ITEM = ITEMS.register("sesuvium", () -> new BlockItem(SESUVIUM.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> GLASSWORT = BLOCKS.register("glasswort", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> GLASSWORT_ITEM = ITEMS.register("glasswort", () -> new BlockItem(GLASSWORT.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> BARREL_CACTUS = BLOCKS.register("barrel_cactus", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> BARREL_CACTUS_ITEM = ITEMS.register("barrel_cactus", () -> new BlockItem(BARREL_CACTUS.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> PRICKLY_PEAR = BLOCKS.register("prickly_pear", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> PRICKLY_PEAR_ITEM = ITEMS.register("prickly_pear", () -> new BlockItem(PRICKLY_PEAR.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> NIPA_PALM = BLOCKS.register("nipa_palm", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> NIPA_PALM_ITEM = ITEMS.register("nipa_palm_item", () -> new BlockItem(NIPA_PALM.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> ELEPHANT_EAR = BLOCKS.register("elephant_ear", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> ELEPHANT_EAR_ITEM = ITEMS.register("elephant_ear", () -> new BlockItem(ELEPHANT_EAR.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> YARROW = BLOCKS.register("yarrow", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> YARROW_ITEM = ITEMS.register("yarrow", () -> new BlockItem(YARROW.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> YUCCA = BLOCKS.register("yucca", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> YUCCA_ITEM = ITEMS.register("yucca", () -> new BlockItem(YUCCA.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> BRACKEN_FERNS = BLOCKS.register("bracken_ferns", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> BRACKEN_FERNS_ITEM = ITEMS.register("bracken_ferns", () -> new BlockItem(BRACKEN_FERNS.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> LAVA_CACTUS = BLOCKS.register("lava_cactus", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> LAVA_CACTUS_ITEM = ITEMS.register("lava_cactus", () -> new BlockItem(LAVA_CACTUS.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> SALT_BUSH = BLOCKS.register("salt_bush", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> SALT_BUSH_ITEM = ITEMS.register("salt_bush", () -> new BlockItem(SALT_BUSH.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
+    public static RegistrySupplier<Block> BOG_ROSEMARY = BLOCKS.register("bog_rosemary", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
+    public static final RegistrySupplier<Item> BOG_ROSEMARY_ITEM = ITEMS.register("bog_rosemary", () -> new BlockItem(BOG_ROSEMARY.get(), new Item.Properties().arch$tab(NATURE_TAB)));
+
     public static RegistrySupplier<Block> VOLCANIC_COBBLESTONE = BLOCKS.register("volcanic_cobblestone", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
     public static final RegistrySupplier<Item> VOLCANIC_COBBLESTONE_ITEM = ITEMS.register("volcanic_cobblestone", () -> new BlockItem(VOLCANIC_COBBLESTONE.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
 
