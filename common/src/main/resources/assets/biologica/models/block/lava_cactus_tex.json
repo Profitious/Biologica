@@ -1,0 +1,9 @@
+{
+  "parent": "biologica:block/lava_cactus",
+  "textures": {
+    "all": "biologica:block/lava_cactus",
+    "particle": "biologica:block/lava_cactus",
+    "0": "biologica:block/lava_cactus"
+  },
+  "render_type": "cutout"
+}

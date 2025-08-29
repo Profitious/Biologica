@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "biologica:block/sesuvium" }
+    "": {
+      "model": "biologica:block/sesuvium_tex"
+    }
   }
 }

@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "biologica:block/lava_cactus" }
+    "": {
+      "model": "biologica:block/lava_cactus_tex"
+    }
   }
 }

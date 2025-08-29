@@ -1,5 +1,10 @@
 {
   "variants": {
-    "": { "model": "biologica:block/nipa_palm" }
+    "half=lower": {
+      "model": "biologica:block/nipa_palm_bottom"
+    },
+    "half=upper": {
+      "model": "biologica:block/nipa_palm_top"
+    }
   }
 }
