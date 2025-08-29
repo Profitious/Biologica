@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "biologica:block/barrel_cactus" }
+    "": {
+      "model": "biologica:block/barrel_cactus_tex"
+    }
   }
 }
