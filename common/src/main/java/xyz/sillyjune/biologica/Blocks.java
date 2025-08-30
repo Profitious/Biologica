@@ -108,10 +108,9 @@ public class Blocks {
     public static RegistrySupplier<Block> VOLCANIC_STONE = BLOCKS.register("volcanic_stone", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
     public static final RegistrySupplier<Item> VOLCANIC_STONE_ITEM = ITEMS.register("volcanic_stone", () -> new BlockItem(VOLCANIC_STONE.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
 
-    public static WoodType TEST_WOOD;
+    public static WoodType KOA_WOOD;
     public static void register() {
-        TEST_WOOD = new WoodType("test");
-        TEST_WOOD.create_json();
+        KOA_WOOD = new WoodType("koa");
         BLOCKS.register();
     }
 }
