@@ -1,5 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "biologica:block/koa_log_stripped"  }
+    "end": "biologica:block/koa_log_stripped_top",
+    "side": "biologica:block/koa_log_stripped"
+  }
 }

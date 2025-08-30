@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "minecraft:block/jacaranda_log_horizontal",
+      "model": "biologica:block/jacaranda_log_horizontal",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "minecraft:block/jacaranda_log"
+      "model": "biologica:block/jacaranda_log"
     },
     "axis=z": {
-      "model": "minecraft:block/jacaranda_log_horizontal",
+      "model": "biologica:block/jacaranda_log_horizontal",
       "x": 90
     }
   }
