@@ -1,0 +1,9 @@
+{
+  "parent": "biologica:block/sesuvium",
+  "textures": {
+    "all": "biologica:block/sesuvium",
+    "particle": "biologica:block/sesuvium",
+    "2": "biologica:block/sesuvium"
+  },
+  "render_type": "cutout"
+}

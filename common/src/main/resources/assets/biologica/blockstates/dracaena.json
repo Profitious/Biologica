@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "biologica:block/dracaena_bottom"
+    },
+    "half=upper": {
+      "model": "biologica:block/dracaena_top"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "biologica:block/prickly_pear",
+  "textures": {
+    "all": "biologica:block/pricklypeartreefruit2",
+    "particle": "biologica:block/pricklypeartreefruit2",
+    "1": "biologica:block/pricklypeartreefruit2"
+  },
+  "render_type": "cutout"
+}

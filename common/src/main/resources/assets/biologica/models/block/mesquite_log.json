@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "biologica:block/mesquite_log_top",
+    "side": "biologica:block/mesquite_log"
+  }
+}

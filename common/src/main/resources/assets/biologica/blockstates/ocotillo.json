@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "biologica:block/ocotillo_bottom"
+    },
+    "half=upper": {
+      "model": "biologica:block/ocotillo_top"
+    }
+  }
+}

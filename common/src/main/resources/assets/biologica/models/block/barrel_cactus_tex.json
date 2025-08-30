@@ -1,0 +1,9 @@
+{
+  "parent": "biologica:block/barrel_cactus",
+  "textures": {
+    "all": "biologica:block/barrel_cactus",
+    "particle": "biologica:block/barrel_cactus",
+    "0": "biologica:block/barrel_cactus"
+  },
+  "render_type": "cutout"
+}
