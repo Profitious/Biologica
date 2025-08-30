@@ -108,6 +108,13 @@ public class Blocks {
     public static RegistrySupplier<Block> VOLCANIC_STONE = BLOCKS.register("volcanic_stone", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
     public static final RegistrySupplier<Item> VOLCANIC_STONE_ITEM = ITEMS.register("volcanic_stone", () -> new BlockItem(VOLCANIC_STONE.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
 
+    public static RegistrySupplier<Block> LIMESTONE = BLOCKS.register("limestone", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
+    public static final RegistrySupplier<Item> LIMESTONE_ITEM = ITEMS.register("limestone", () -> new BlockItem(LIMESTONE.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
+
+
+    public static RegistrySupplier<Block> LIMESTONE_GRAVEL = BLOCKS.register("limestone_gravel", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
+    public static final RegistrySupplier<Item> LIMESTONE_GRAVEL_ITEM = ITEMS.register("limestone_gravel", () -> new BlockItem(LIMESTONE_GRAVEL.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
+
     public static WoodType KOA_WOOD = new WoodType("koa");
     public static WoodType JACARANDA_WOOD = new WoodType("jacaranda");
     public static WoodType MESQUITE_WOOD = new WoodType("mesquite");
