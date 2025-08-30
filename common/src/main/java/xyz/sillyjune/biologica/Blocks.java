@@ -111,6 +111,7 @@ public class Blocks {
     public static WoodType KOA_WOOD = new WoodType("koa");
     public static WoodType JACARANDA_WOOD = new WoodType("jacaranda");
     public static WoodType MESQUITE_WOOD = new WoodType("mesquite");
+    public static WoodType TULANG_WOOD = new WoodType("tulang");
 
     public static void register() {
         BLOCKS.register();
