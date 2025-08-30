@@ -12,6 +12,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import xyz.sillyjune.biologica.Block.CranberryBushBlock;
 import xyz.sillyjune.biologica.Block.OcotilloBlock;
+import xyz.sillyjune.biologica.Util.WoodType;
 
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
 import static xyz.sillyjune.biologica.Food.CRANBERRIES_FOOD;
@@ -19,7 +20,7 @@ import static xyz.sillyjune.biologica.Items.ITEMS;
 import static xyz.sillyjune.biologica.Util.Tabs.*;
 
 public class Blocks {
-    private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(MOD_ID, Registries.BLOCK);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(MOD_ID, Registries.BLOCK);
 
     public static RegistrySupplier<Block> BOSTON_FERN = BLOCKS.register("boston_fern", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
     public static RegistrySupplier<Item> BOSTON_FERN_ITEM = ITEMS.register("boston_fern", () -> new BlockItem(BOSTON_FERN.get(), new Item.Properties().arch$tab(NATURE_TAB)));
@@ -107,7 +108,10 @@ public class Blocks {
     public static RegistrySupplier<Block> VOLCANIC_STONE = BLOCKS.register("volcanic_stone", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
     public static final RegistrySupplier<Item> VOLCANIC_STONE_ITEM = ITEMS.register("volcanic_stone", () -> new BlockItem(VOLCANIC_STONE.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
 
+    public static WoodType TEST_WOOD;
     public static void register() {
+        TEST_WOOD = new WoodType("test");
+        TEST_WOOD.create_json();
         BLOCKS.register();
     }
 }
