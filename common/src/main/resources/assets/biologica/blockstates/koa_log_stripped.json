@@ -1,6 +1,16 @@
 {
   "variants": {
-    "": {
-      "model": "biologica:block/koa_log_stripped"    }
+    "axis=x": {
+      "model": "biologica:block/koa_log_stripped_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "biologica:block/koa_log"
+    },
+    "axis=z": {
+      "model": "biologica:block/koa_log_stripped_horizontal",
+      "x": 90
+    }
   }
 }
