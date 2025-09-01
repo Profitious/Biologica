@@ -29,7 +29,8 @@ public class StructureFeature extends Feature<StructureFeatureConfiguration> {
         super(codec);
     }
 
-    public boolean m_142674_(FeaturePlaceContext<StructureFeatureConfiguration> context) {
+    @Override
+    public boolean place(FeaturePlaceContext<StructureFeatureConfiguration> context) {
         RandomSource random = context.random();
         WorldGenLevel worldGenLevel = context.level();
         StructureFeatureConfiguration config = context.config();
@@ -44,8 +45,4 @@ public class StructureFeature extends Feature<StructureFeatureConfiguration> {
     }
 
 
-    @Override
-    public boolean place(FeaturePlaceContext<StructureFeatureConfiguration> featurePlaceContext) {
-        return false;
-    }
 }
