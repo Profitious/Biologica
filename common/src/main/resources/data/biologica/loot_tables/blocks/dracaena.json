@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "biologica:blocks/dracaena",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "biologica:dracaena",
+          "conditions": [
+            {
+              "block": "biologica:dracaena",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

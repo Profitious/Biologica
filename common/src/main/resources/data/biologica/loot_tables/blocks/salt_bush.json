@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "biologica:blocks/salt_bush",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "biologica:salt_bush",
+          "conditions": [
+            {
+              "block": "biologica:salt_bush",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

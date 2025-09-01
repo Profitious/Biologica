@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "biologica:blocks/bog_rosemary",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "biologica:bog_rosemary"
+        }
+      ]
+    }
+  ]
+}
