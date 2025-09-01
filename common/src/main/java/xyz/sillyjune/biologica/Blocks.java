@@ -112,7 +112,7 @@ public class Blocks {
     public static final RegistrySupplier<Item> LIMESTONE_ITEM = ITEMS.register("limestone", () -> new BlockItem(LIMESTONE.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
 
 
-    public static RegistrySupplier<Block> LIMESTONE_GRAVEL = BLOCKS.register("limestone_gravel", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
+    public static RegistrySupplier<Block> LIMESTONE_GRAVEL = BLOCKS.register("limestone_gravel", () -> new GravelBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.SNARE).strength(0.6F).sound(SoundType.GRAVEL)));
     public static final RegistrySupplier<Item> LIMESTONE_GRAVEL_ITEM = ITEMS.register("limestone_gravel", () -> new BlockItem(LIMESTONE_GRAVEL.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
 
     public static WoodType KOA_WOOD = new WoodType("koa");
