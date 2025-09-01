@@ -1,5 +1,6 @@
 package xyz.sillyjune.biologica.forge;
 
+import dev.architectury.registry.level.biome.forge.BiomeModificationsImpl;
 import xyz.sillyjune.biologica.Biologica;
 import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.fml.common.Mod;
@@ -13,5 +14,7 @@ public final class BiologicaForge {
 
         // Run our common setup.
         Biologica.init();
+
+
     }
 }
