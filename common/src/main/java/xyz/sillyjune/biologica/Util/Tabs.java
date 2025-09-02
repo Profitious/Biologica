@@ -7,7 +7,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
 import static xyz.sillyjune.biologica.Blocks.BOSTON_FERN;
