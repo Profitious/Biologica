@@ -48,7 +48,7 @@ dependencies {
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionForge')
-    implementation "com.github.glitchfiend:TerraBlender-forge:1.20.1-$terra_blender_version"
+    modImplementation "com.github.glitchfiend:TerraBlender-forge:1.20.1-$terra_blender_version"
 }
 
 processResources {
