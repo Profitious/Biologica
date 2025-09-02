@@ -14,7 +14,7 @@ import terrablender.api.Regions;
 import terrablender.api.TerraBlenderApi;
 import xyz.sillyjune.biologica.Biologica;
 import net.fabricmc.api.ModInitializer;
-import xyz.sillyjune.biologica.fabric.world.PrimaryBiologicaOverworldRegion;
+import xyz.sillyjune.biologica.world.PrimaryBiologicaOverworldRegion;
 
 import java.util.function.Predicate;
 
@@ -35,6 +35,6 @@ public final class BiologicaFabric implements ModInitializer, TerraBlenderApi {
     public void onTerraBlenderInitialized()
     {
         // Weights are kept intentionally low as we add minimal biomes
-        Regions.register(new PrimaryBiologicaOverworldRegion(new ResourceLocation(MOD_ID, "overworld1"), 50));
+        Regions.register(new PrimaryBiologicaOverworldRegion(new ResourceLocation(MOD_ID, "overworld1"), 10));
     }
 }

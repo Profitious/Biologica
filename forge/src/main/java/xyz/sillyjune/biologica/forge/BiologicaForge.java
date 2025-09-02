@@ -7,7 +7,7 @@ import xyz.sillyjune.biologica.Biologica;
 import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import xyz.sillyjune.biologica.forge.world.PrimaryBiologicaOverworldRegion;
+import xyz.sillyjune.biologica.world.PrimaryBiologicaOverworldRegion;
 
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
 
@@ -19,7 +19,7 @@ public final class BiologicaForge {
 
         // Run our common setup.
         Biologica.init();
-        Regions.register(new PrimaryBiologicaOverworldRegion(ResourceLocation.fromNamespaceAndPath(MOD_ID, "overworld"), 50));
+        Regions.register(new PrimaryBiologicaOverworldRegion(ResourceLocation.fromNamespaceAndPath(MOD_ID, "overworld"), 10));
 
 
     }

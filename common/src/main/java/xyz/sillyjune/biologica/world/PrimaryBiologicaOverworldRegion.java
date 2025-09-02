@@ -1,17 +1,14 @@
-package xyz.sillyjune.biologica.fabric.world;
+package xyz.sillyjune.biologica.world;
 
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.core.Registry;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Climate;
-import terrablender.api.ParameterUtils;
 import terrablender.api.Region;
 import terrablender.api.RegionType;
 import terrablender.api.VanillaParameterOverlayBuilder;
-import xyz.sillyjune.biologica.world.BiomeRegistry;
 
 import java.util.List;
 import java.util.function.Consumer;
