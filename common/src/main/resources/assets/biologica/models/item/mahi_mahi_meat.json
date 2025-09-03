@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "biologica:item/mahi_mahi_meat"
+  }
+}

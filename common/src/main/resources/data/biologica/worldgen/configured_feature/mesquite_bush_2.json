@@ -1,0 +1,15 @@
+{
+  "type": "biologica:structure_feature",
+  "config": {
+    "structure": "biologica:mesquitebush2",
+    "ignored_blocks": [
+      "minecraft:air",
+      "minecraft:structure_block"
+    ],
+    "offset": [
+      -2,
+      0,
+      -2
+    ]
+  }
+}

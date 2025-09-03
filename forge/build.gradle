@@ -1,0 +1,74 @@
+plugins {
+    id 'com.github.johnrengelman.shadow'
+}
+
+loom {
+    forge {
+        mixinConfig "biologica.mixins.json"
+    }
+}
+
+architectury {
+    platformSetupLoomIde()
+    forge()
+}
+
+configurations {
+    common {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentForge.extendsFrom common
+
+    // Files in this configuration will be bundled into your mod using the Shadow plugin.
+    // Don't use the `shadow` configuration from the plugin itself as it's meant for excluding files.
+    shadowBundle {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+}
+
+repositories {
+    maven { url = 'https://maven.minecraftforge.net/' }
+
+
+}
+
+dependencies {
+    mappings loom.layered() {
+        officialMojangMappings() {
+            nameSyntheticMembers = true
+        }
+        parchment("org.parchmentmc.data:parchment-$parchment_mc_version:$parchment_date@zip")
+    }
+
+    forge "net.minecraftforge:forge:$rootProject.forge_version"
+
+    modImplementation "dev.architectury:architectury-forge:$rootProject.architectury_api_version"
+
+    common(project(path: ':common', configuration: 'namedElements')) { transitive false }
+    shadowBundle project(path: ':common', configuration: 'transformProductionForge')
+    modImplementation "com.github.glitchfiend:TerraBlender-forge:1.20.1-$terra_blender_version"
+
+    modImplementation "software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}"
+    implementation "com.eliotlash.mclib:mclib:20"
+}
+
+processResources {
+    inputs.property 'version', project.version
+
+    filesMatching('META-INF/mods.toml') {
+        expand version: project.version
+    }
+}
+
+shadowJar {
+    configurations = [project.configurations.shadowBundle]
+    archiveClassifier = 'dev-shadow'
+}
+
+remapJar {
+    input.set shadowJar.archiveFile
+}
