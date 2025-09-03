@@ -41,6 +41,9 @@ dependencies {
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
     modImplementation "com.github.glitchfiend:TerraBlender-fabric:1.20.1-$terra_blender_version"
 
+    modImplementation "software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}"
+    implementation "com.eliotlash.mclib:mclib:20"
+
 }
 
 processResources {

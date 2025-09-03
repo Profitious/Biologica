@@ -32,6 +32,8 @@ configurations {
 
 repositories {
     maven { url = 'https://maven.minecraftforge.net/' }
+
+
 }
 
 dependencies {
@@ -49,6 +51,9 @@ dependencies {
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionForge')
     modImplementation "com.github.glitchfiend:TerraBlender-forge:1.20.1-$terra_blender_version"
+
+    modImplementation "software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}"
+    implementation "com.eliotlash.mclib:mclib:20"
 }
 
 processResources {

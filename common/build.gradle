@@ -14,4 +14,7 @@ dependencies {
 
     modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
     modCompileOnly "com.github.glitchfiend:TerraBlender-common:$minecraft_version-$terra_blender_version"
+
+    modImplementation "software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}"
+    implementation "com.eliotlash.mclib:mclib:20"
 }
