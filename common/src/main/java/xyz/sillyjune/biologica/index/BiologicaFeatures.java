@@ -1,10 +1,11 @@
-package xyz.sillyjune.biologica.world.features;
+package xyz.sillyjune.biologica.index;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import xyz.sillyjune.biologica.Biologica;
+import xyz.sillyjune.biologica.world.features.StructureFeature;
 import xyz.sillyjune.biologica.world.features.configurations.StructureFeatureConfiguration;
 
 public class BiologicaFeatures {

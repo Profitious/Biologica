@@ -6,8 +6,10 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.InstrumentItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.block.Block;
 import xyz.sillyjune.biologica.Biologica;
@@ -102,6 +104,8 @@ public class BiologicaItems {
     public static final RegistrySupplier<BlockItem> VOLCANIC_STONE = register(BiologicaBlocks.VOLCANIC_STONE);
     public static final RegistrySupplier<BlockItem> LIMESTONE = register(BiologicaBlocks.LIMESTONE);
     public static final RegistrySupplier<BlockItem> LIMESTONE_GRAVEL = register(BiologicaBlocks.LIMESTONE_GRAVEL);
+
+    public static final RegistrySupplier<SpawnEggItem> PARROTFISH_SPAWN_EGG = register("parrotfish_spawn_egg", p -> new SpawnEggItem(BiologicaEntityTypes.PARROTFISH.get(), 0, 0, p), new Item.Properties().arch$tab(CreativeModeTabs.SPAWN_EGGS));
 
     static void register() {
         ITEMS.register();
