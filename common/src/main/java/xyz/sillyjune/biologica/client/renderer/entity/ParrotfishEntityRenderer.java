@@ -21,10 +21,7 @@ public class ParrotfishEntityRenderer extends MobRenderer<ParrotfishEntity, Parr
 
     @Override
     public void render(ParrotfishEntity entity, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
-        poseStack.pushPose();
-        poseStack.translate(0.0, -22 / 16.0, 0.0);
         super.render(entity, entityYaw, partialTicks, poseStack, buffer, packedLight);
-        poseStack.popPose();
     }
 
     @Override
@@ -41,8 +38,10 @@ public class ParrotfishEntityRenderer extends MobRenderer<ParrotfishEntity, Parr
         poseStack.mulPose(Axis.YP.rotationDegrees(h));
         poseStack.translate(0.0F, 0.0F, -0.4F);
         if (!entity.isInWater()) {
-            poseStack.translate(0.2F, 0.1F, 0.0F);
+            poseStack.translate(22.0 / 16, 0.1F, 0.0F);
             poseStack.mulPose(Axis.ZP.rotationDegrees(90.0F));
+        } else {
+            poseStack.translate(0.0, -22.0 / 16, 0.0);
         }
     }
 

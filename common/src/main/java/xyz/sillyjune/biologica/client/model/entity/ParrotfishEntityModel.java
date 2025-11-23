@@ -9,6 +9,7 @@ import net.minecraft.client.model.geom.builders.CubeListBuilder;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.minecraft.client.model.geom.builders.PartDefinition;
+import net.minecraft.util.Mth;
 import xyz.sillyjune.biologica.entity.ParrotfishEntity;
 
 public class ParrotfishEntityModel<T extends ParrotfishEntity> extends HierarchicalModel<T> {
@@ -72,5 +73,13 @@ public class ParrotfishEntityModel<T extends ParrotfishEntity> extends Hierarchi
 
     @Override
     public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+        float f = 1.0F;
+        float g = 1.0F;
+        if (!entity.isInWater()) {
+            f = 1.3F;
+            g = 1.7F;
+        }
+
+        this.body.yRot = -f * 0.25F * Mth.sin(g * 0.6F * ageInTicks);
     }
 }
