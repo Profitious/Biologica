@@ -9,8 +9,7 @@ import xyz.sillyjune.biologica.Biologica;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BiomeRegistry {
-
+public class BiologicaBiomes {
     public static List<ResourceKey<Biome>> overworldBiomes = new ArrayList<>();
 
     public static final ResourceKey<Biome> ALAKAI = registerOverworldBiome("alakai");
@@ -28,7 +27,6 @@ public class BiomeRegistry {
     public static final ResourceKey<Biome> TEMPERATE_SHRUBLAND = registerOverworldBiome("temperate_shrubland");
     public static final ResourceKey<Biome> TROPICAL_DRY_FOREST = registerOverworldBiome("tropical_dry_forest");
     public static final ResourceKey<Biome> VOLCANIC_WASTES = registerOverworldBiome("volcanic_wastes");
-
 
     private static ResourceKey<Biome> registerOverworldBiome(String name){
         ResourceKey<Biome> key = ResourceKey.create(Registries.BIOME, new ResourceLocation(Biologica.MOD_ID, name));

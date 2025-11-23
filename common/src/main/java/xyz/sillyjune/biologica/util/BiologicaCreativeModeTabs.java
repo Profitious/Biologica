@@ -1,4 +1,4 @@
-package xyz.sillyjune.biologica.Util;
+package xyz.sillyjune.biologica.util;
 
 import dev.architectury.registry.CreativeTabRegistry;
 import dev.architectury.registry.registries.DeferredRegister;
@@ -9,11 +9,13 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
-import static xyz.sillyjune.biologica.Blocks.BOSTON_FERN;
-import static xyz.sillyjune.biologica.Blocks.VOLCANIC_STONE;
-import static xyz.sillyjune.biologica.Items.*;
+import static xyz.sillyjune.biologica.block.BiologicaBlocks.BOSTON_FERN;
+import static xyz.sillyjune.biologica.block.BiologicaBlocks.VOLCANIC_STONE;
+import static xyz.sillyjune.biologica.item.BiologicaItems.MAMMOTH_MEAT;
+import static xyz.sillyjune.biologica.item.BiologicaItems.MARACAS;
+import static xyz.sillyjune.biologica.item.BiologicaItems.OX_HORN;
 
-public class Tabs {
+public class BiologicaCreativeModeTabs {
     private static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(MOD_ID, Registries.CREATIVE_MODE_TAB);
     public static final RegistrySupplier<CreativeModeTab> FOOD_TAB = TABS.register("food", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.food"), () -> new ItemStack(MAMMOTH_MEAT.get())));
     public static final RegistrySupplier<CreativeModeTab> CRAFTING_TAB = TABS.register("crafting", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.crafting"), () -> new ItemStack(OX_HORN.get())));

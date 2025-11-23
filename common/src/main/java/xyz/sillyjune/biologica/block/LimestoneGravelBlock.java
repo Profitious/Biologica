@@ -1,4 +1,4 @@
-package xyz.sillyjune.biologica.Block;
+package xyz.sillyjune.biologica.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;

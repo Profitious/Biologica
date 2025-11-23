@@ -7,11 +7,11 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import xyz.sillyjune.biologica.Biologica;
 import xyz.sillyjune.biologica.world.features.configurations.StructureFeatureConfiguration;
 
-public class Features {
-
+public class BiologicaFeatures {
     public static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(Biologica.MOD_ID, Registries.FEATURE);
     public static final RegistrySupplier<Feature<?>> STRUCTURE_FEATURE = FEATURES.register("structure_feature", () -> new StructureFeature(StructureFeatureConfiguration.CODEC));
     
-    
-    public static void register(){FEATURES.register();}
+    public static void register() {
+        FEATURES.register();
+    }
 }

@@ -1,8 +1,8 @@
-package xyz.sillyjune.biologica;
+package xyz.sillyjune.biologica.item;
 
 import net.minecraft.world.food.FoodProperties;
 
-public class Food {
+public class BiologicaFood {
     public static final FoodProperties MAMMOTH_MEAT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
     public static final FoodProperties RAW_MAMMOTH_MEAT_FOOD = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).build();
 

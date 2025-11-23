@@ -1,4 +1,4 @@
-package xyz.sillyjune.biologica;
+package xyz.sillyjune.biologica.item;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
@@ -6,14 +6,37 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.InstrumentItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
-import xyz.sillyjune.biologica.Util.InstrumentTags;
-import xyz.sillyjune.biologica.Util.Tiers;
+import xyz.sillyjune.biologica.util.BiologicaInstrumentTags;
+import xyz.sillyjune.biologica.util.BiologicaTiers;
 
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
-import static xyz.sillyjune.biologica.Food.*;
-import static xyz.sillyjune.biologica.Util.Tabs.*;
+import static xyz.sillyjune.biologica.item.BiologicaFood.BEAR_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.CACTUS_STEW_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.CRANBERRY_STEW_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.DINOSAUR_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.ELEPHANT_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.ELK_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.MAHI_MAHI_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.MAMMOTH_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.NOPAL_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.PRICKLY_PEAR_FRUIT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.RAW_BEAR_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.RAW_DINOSAUR_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.RAW_ELEPHANT_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.RAW_ELK_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.RAW_MAHI_MAHI_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.RAW_MAMMOTH_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.RAW_SAUROPOD_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.RAW_SHARK_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.RAW_TERROR_BIRD_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.SAUROPOD_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.SHARK_MEAT_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaFood.TERROR_BIRD_MEAT_FOOD;
+import static xyz.sillyjune.biologica.util.BiologicaCreativeModeTabs.CRAFTING_TAB;
+import static xyz.sillyjune.biologica.util.BiologicaCreativeModeTabs.FOOD_TAB;
+import static xyz.sillyjune.biologica.util.BiologicaCreativeModeTabs.TOOLS_TAB;
 
-public class Items {
+public class BiologicaItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
 
     public static final RegistrySupplier<Item> MAMMOTH_MEAT = ITEMS.register("mammoth_meat", () -> new Item(new Item.Properties().food(MAMMOTH_MEAT_FOOD).arch$tab(FOOD_TAB)));
@@ -63,9 +86,9 @@ public class Items {
     public static final RegistrySupplier<Item> ANTLERS = ITEMS.register("antlers", () -> new Item(new Item.Properties().arch$tab(CRAFTING_TAB)));
     public static final RegistrySupplier<Item> TERROR_BIRD_FEATHER = ITEMS.register("terror_bird_feather", () -> new Item(new Item.Properties().arch$tab(CRAFTING_TAB)));
 
-    public static final RegistrySupplier<Item> MARACAS = ITEMS.register("maracas", () ->new InstrumentItem((new Item.Properties()).stacksTo(1).arch$tab(TOOLS_TAB), InstrumentTags.MARACAS));
-    public static final RegistrySupplier<Item> MACUHALUTI = ITEMS.register("machuhaluti", () -> new SwordItem(Tiers.MACUHALUTI_TIER, 0, -2.0f, new Item.Properties().arch$tab(TOOLS_TAB)));
-    public static final RegistrySupplier<Item> CLAW_SWORD = ITEMS.register("claw_sword", () -> new SwordItem(Tiers.CLAW_TIER, 0, -2.0f, new Item.Properties().arch$tab(TOOLS_TAB)));
+    public static final RegistrySupplier<Item> MARACAS = ITEMS.register("maracas", () ->new InstrumentItem((new Item.Properties()).stacksTo(1).arch$tab(TOOLS_TAB), BiologicaInstrumentTags.MARACAS));
+    public static final RegistrySupplier<Item> MACUHALUTI = ITEMS.register("machuhaluti", () -> new SwordItem(BiologicaTiers.MACUHALUTI_TIER, 0, -2.0f, new Item.Properties().arch$tab(TOOLS_TAB)));
+    public static final RegistrySupplier<Item> CLAW_SWORD = ITEMS.register("claw_sword", () -> new SwordItem(BiologicaTiers.CLAW_TIER, 0, -2.0f, new Item.Properties().arch$tab(TOOLS_TAB)));
 
     public static void register() {
         ITEMS.register();

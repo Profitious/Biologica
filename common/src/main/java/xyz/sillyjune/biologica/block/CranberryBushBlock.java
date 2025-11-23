@@ -1,4 +1,4 @@
-package xyz.sillyjune.biologica.Block;
+package xyz.sillyjune.biologica.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -26,7 +26,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
-import static xyz.sillyjune.biologica.Blocks.CRANBERRIES;
+import static xyz.sillyjune.biologica.block.BiologicaBlocks.CRANBERRIES;
 
 public class CranberryBushBlock extends BushBlock implements BonemealableBlock {
     public static final IntegerProperty AGE;

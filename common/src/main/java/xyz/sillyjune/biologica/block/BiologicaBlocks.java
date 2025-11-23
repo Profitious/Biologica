@@ -1,25 +1,30 @@
-package xyz.sillyjune.biologica;
+package xyz.sillyjune.biologica.block;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DeadBushBlock;
+import net.minecraft.world.level.block.GravelBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.TallFlowerBlock;
+import net.minecraft.world.level.block.TallGrassBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
-import xyz.sillyjune.biologica.Block.CranberryBushBlock;
-import xyz.sillyjune.biologica.Block.OcotilloBlock;
-import xyz.sillyjune.biologica.Util.WoodType;
+import xyz.sillyjune.biologica.util.BiologicaWoodType;
 
 import static xyz.sillyjune.biologica.Biologica.MOD_ID;
-import static xyz.sillyjune.biologica.Food.CRANBERRIES_FOOD;
-import static xyz.sillyjune.biologica.Items.ITEMS;
-import static xyz.sillyjune.biologica.Util.Tabs.*;
+import static xyz.sillyjune.biologica.item.BiologicaFood.CRANBERRIES_FOOD;
+import static xyz.sillyjune.biologica.item.BiologicaItems.ITEMS;
+import static xyz.sillyjune.biologica.util.BiologicaCreativeModeTabs.BLOCKS_TAB;
+import static xyz.sillyjune.biologica.util.BiologicaCreativeModeTabs.FOOD_TAB;
+import static xyz.sillyjune.biologica.util.BiologicaCreativeModeTabs.NATURE_TAB;
 
-public class Blocks {
+public class BiologicaBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(MOD_ID, Registries.BLOCK);
 
     public static RegistrySupplier<Block> BOSTON_FERN = BLOCKS.register("boston_fern", () -> new TallGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).replaceable().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));;
@@ -115,12 +120,12 @@ public class Blocks {
     public static RegistrySupplier<Block> LIMESTONE_GRAVEL = BLOCKS.register("limestone_gravel", () -> new GravelBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.SNARE).strength(0.6F).sound(SoundType.GRAVEL)));
     public static final RegistrySupplier<Item> LIMESTONE_GRAVEL_ITEM = ITEMS.register("limestone_gravel", () -> new BlockItem(LIMESTONE_GRAVEL.get(), new Item.Properties().arch$tab(BLOCKS_TAB)));
 
-    public static WoodType KOA_WOOD = new WoodType("koa");
-    public static WoodType JACARANDA_WOOD = new WoodType("jacaranda");
-    public static WoodType MESQUITE_WOOD = new WoodType("mesquite");
-    public static WoodType TULANG_WOOD = new WoodType("tulang");
-    public static WoodType DOUGLAS_FIR_WOOD = new WoodType("douglasfir");
-    public static WoodType OHIA_LEHUA_WOOD = new WoodType("ohialehua");
+    public static BiologicaWoodType KOA_WOOD = new BiologicaWoodType("koa");
+    public static BiologicaWoodType JACARANDA_WOOD = new BiologicaWoodType("jacaranda");
+    public static BiologicaWoodType MESQUITE_WOOD = new BiologicaWoodType("mesquite");
+    public static BiologicaWoodType TULANG_WOOD = new BiologicaWoodType("tulang");
+    public static BiologicaWoodType DOUGLAS_FIR_WOOD = new BiologicaWoodType("douglasfir");
+    public static BiologicaWoodType OHIA_LEHUA_WOOD = new BiologicaWoodType("ohialehua");
 
     public static void register() {
         BLOCKS.register();

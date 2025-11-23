@@ -1,4 +1,4 @@
-package xyz.sillyjune.biologica.Util;
+package xyz.sillyjune.biologica.util;
 
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Tier;
@@ -8,9 +8,9 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 import static net.minecraft.world.item.Items.OBSIDIAN;
-import static xyz.sillyjune.biologica.Items.CLAW;
+import static xyz.sillyjune.biologica.item.BiologicaItems.CLAW;
 
-public enum Tiers implements Tier {
+public enum BiologicaTiers implements Tier {
     MACUHALUTI_TIER(0, 550, 0.5F, 5.0F, 2, () -> Ingredient.of(OBSIDIAN)),
     CLAW_TIER(0, 550, 0.5F, 5.0F, 2, () -> Ingredient.of(CLAW.get()));
 
@@ -21,7 +21,7 @@ public enum Tiers implements Tier {
     private final int enchantmentValue;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    private Tiers(int j, int k, float f, float g, int l, Supplier<Ingredient> supplier) {
+    private BiologicaTiers(int j, int k, float f, float g, int l, Supplier<Ingredient> supplier) {
         this.level = j;
         this.uses = k;
         this.speed = f;
