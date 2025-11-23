@@ -21,13 +21,13 @@ public enum BiologicaTiers implements Tier {
     private final int enchantmentValue;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    private BiologicaTiers(int j, int k, float f, float g, int l, Supplier<Ingredient> supplier) {
+    BiologicaTiers(int j, int k, float f, float g, int l, Supplier<Ingredient> supplier) {
         this.level = j;
         this.uses = k;
         this.speed = f;
         this.damage = g;
         this.enchantmentValue = l;
-        this.repairIngredient = new LazyLoadedValue(supplier);
+        this.repairIngredient = new LazyLoadedValue<>(supplier);
     }
 
     public int getUses() {
@@ -51,6 +51,6 @@ public enum BiologicaTiers implements Tier {
     }
 
     public @NotNull Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 }

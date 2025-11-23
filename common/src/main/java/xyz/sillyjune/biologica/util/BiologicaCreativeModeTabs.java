@@ -17,13 +17,14 @@ import static xyz.sillyjune.biologica.item.BiologicaItems.OX_HORN;
 
 public class BiologicaCreativeModeTabs {
     private static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(MOD_ID, Registries.CREATIVE_MODE_TAB);
-    public static final RegistrySupplier<CreativeModeTab> FOOD_TAB = TABS.register("food", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.food"), () -> new ItemStack(MAMMOTH_MEAT.get())));
-    public static final RegistrySupplier<CreativeModeTab> CRAFTING_TAB = TABS.register("crafting", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.crafting"), () -> new ItemStack(OX_HORN.get())));
-    public static final RegistrySupplier<CreativeModeTab> TOOLS_TAB = TABS.register("tools", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.tools"), () -> new ItemStack(MARACAS.get())));
-    public static final RegistrySupplier<CreativeModeTab> BLOCKS_TAB = TABS.register("blocks", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.blocks"), () -> new ItemStack(VOLCANIC_STONE.get())));
-    public static final RegistrySupplier<CreativeModeTab> NATURE_TAB = TABS.register("nature", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.natural"), () -> new ItemStack(BOSTON_FERN.get())));
 
-    public static void register(){
+    public static final RegistrySupplier<CreativeModeTab> FOOD = TABS.register("food", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.food"), () -> new ItemStack(MAMMOTH_MEAT.get())));
+    public static final RegistrySupplier<CreativeModeTab> CRAFTING = TABS.register("crafting", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.crafting"), () -> new ItemStack(OX_HORN.get())));
+    public static final RegistrySupplier<CreativeModeTab> TOOLS = TABS.register("tools", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.tools"), () -> new ItemStack(MARACAS.get())));
+    public static final RegistrySupplier<CreativeModeTab> BLOCKS = TABS.register("blocks", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.blocks"), () -> new ItemStack(VOLCANIC_STONE.get())));
+    public static final RegistrySupplier<CreativeModeTab> NATURE = TABS.register("nature", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.natural"), () -> new ItemStack(BOSTON_FERN.get())));
+
+    public static void register() {
         TABS.register();
     }
 }

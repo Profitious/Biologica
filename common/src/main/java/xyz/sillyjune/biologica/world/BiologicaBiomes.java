@@ -28,7 +28,7 @@ public class BiologicaBiomes {
     public static final ResourceKey<Biome> TROPICAL_DRY_FOREST = registerOverworldBiome("tropical_dry_forest");
     public static final ResourceKey<Biome> VOLCANIC_WASTES = registerOverworldBiome("volcanic_wastes");
 
-    private static ResourceKey<Biome> registerOverworldBiome(String name){
+    private static ResourceKey<Biome> registerOverworldBiome(String name) {
         ResourceKey<Biome> key = ResourceKey.create(Registries.BIOME, new ResourceLocation(Biologica.MOD_ID, name));
         overworldBiomes.add(key);
         return key;

@@ -8,7 +8,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class OcotilloBlock extends TallFlowerBlock {
-
     public OcotilloBlock(BlockBehaviour.Properties properties) {
         super(properties);
     }

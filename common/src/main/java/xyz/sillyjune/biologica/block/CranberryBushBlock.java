@@ -25,8 +25,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
-
-import static xyz.sillyjune.biologica.block.BiologicaBlocks.CRANBERRIES;
+import xyz.sillyjune.biologica.item.BiologicaItems;
 
 public class CranberryBushBlock extends BushBlock implements BonemealableBlock {
     public static final IntegerProperty AGE;
@@ -38,7 +37,7 @@ public class CranberryBushBlock extends BushBlock implements BonemealableBlock {
     }
 
     public @NotNull ItemStack getCloneItemStack(BlockGetter blockGetter, BlockPos blockPos, BlockState blockState) {
-        return new ItemStack(CRANBERRIES.get());
+        return new ItemStack(BiologicaItems.CRANBERRIES.get());
     }
 
     public @NotNull VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
@@ -70,7 +69,7 @@ public class CranberryBushBlock extends BushBlock implements BonemealableBlock {
             return InteractionResult.PASS;
         } else if (i > 1) {
             int j = 1 + level.random.nextInt(2);
-            popResource(level, blockPos, new ItemStack(CRANBERRIES.get(), j + (bl ? 1 : 0)));
+            popResource(level, blockPos, new ItemStack(BiologicaItems.CRANBERRIES.get(), j + (bl ? 1 : 0)));
             level.playSound(null, blockPos, SoundEvents.GRASS_BREAK, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
             BlockState blockState2 = blockState.setValue(AGE, 1);
             level.setBlock(blockPos, blockState2, 2);

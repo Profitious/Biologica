@@ -9,6 +9,7 @@ import xyz.sillyjune.biologica.world.features.configurations.StructureFeatureCon
 
 public class BiologicaFeatures {
     public static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(Biologica.MOD_ID, Registries.FEATURE);
+
     public static final RegistrySupplier<Feature<?>> STRUCTURE_FEATURE = FEATURES.register("structure_feature", () -> new StructureFeature(StructureFeatureConfiguration.CODEC));
     
     public static void register() {
