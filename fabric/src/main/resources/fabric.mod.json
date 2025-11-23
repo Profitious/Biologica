@@ -19,9 +19,6 @@
     ],
     "client": [
       "xyz.sillyjune.biologica.fabric.client.BiologicaFabricClient"
-    ],
-    "terrablender": [
-      "xyz.sillyjune.biologica.fabric.BiologicaFabric"
     ]
   },
   "mixins": [
