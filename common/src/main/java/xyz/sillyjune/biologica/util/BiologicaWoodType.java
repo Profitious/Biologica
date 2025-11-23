@@ -25,8 +25,8 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import xyz.sillyjune.biologica.Biologica;
-import xyz.sillyjune.biologica.block.BiologicaBlocks;
-import xyz.sillyjune.biologica.item.BiologicaItems;
+import xyz.sillyjune.biologica.index.BiologicaBlocks;
+import xyz.sillyjune.biologica.index.BiologicaItems;
 
 public class BiologicaWoodType {
     public final Blocks blocks;

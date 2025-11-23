@@ -1,4 +1,4 @@
-package xyz.sillyjune.biologica.world;
+package xyz.sillyjune.biologica.index;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;

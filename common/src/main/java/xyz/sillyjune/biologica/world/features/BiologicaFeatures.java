@@ -12,7 +12,7 @@ public class BiologicaFeatures {
 
     public static final RegistrySupplier<Feature<?>> STRUCTURE_FEATURE = FEATURES.register("structure_feature", () -> new StructureFeature(StructureFeatureConfiguration.CODEC));
     
-    public static void register() {
+    static void register() {
         FEATURES.register();
     }
 }

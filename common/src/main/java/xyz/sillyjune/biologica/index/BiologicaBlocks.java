@@ -1,4 +1,4 @@
-package xyz.sillyjune.biologica.block;
+package xyz.sillyjune.biologica.index;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
@@ -14,6 +14,8 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import xyz.sillyjune.biologica.Biologica;
+import xyz.sillyjune.biologica.block.CranberryBushBlock;
+import xyz.sillyjune.biologica.block.OcotilloBlock;
 import xyz.sillyjune.biologica.util.BiologicaWoodType;
 
 import java.util.function.Function;
@@ -64,7 +66,7 @@ public class BiologicaBlocks {
     public static BiologicaWoodType DOUGLAS_FIR_WOOD = new BiologicaWoodType("douglasfir");
     public static BiologicaWoodType OHIA_LEHUA_WOOD = new BiologicaWoodType("ohialehua");
 
-    public static void register() {
+    static void register() {
         BLOCKS.register();
     }
 

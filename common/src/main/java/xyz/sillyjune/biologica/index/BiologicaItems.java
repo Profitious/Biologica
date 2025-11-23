@@ -1,4 +1,4 @@
-package xyz.sillyjune.biologica.item;
+package xyz.sillyjune.biologica.index;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
@@ -11,8 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.block.Block;
 import xyz.sillyjune.biologica.Biologica;
-import xyz.sillyjune.biologica.block.BiologicaBlocks;
-import xyz.sillyjune.biologica.util.BiologicaCreativeModeTabs;
+import xyz.sillyjune.biologica.item.BiologicaFood;
 import xyz.sillyjune.biologica.util.BiologicaInstrumentTags;
 import xyz.sillyjune.biologica.util.BiologicaTiers;
 
@@ -104,7 +103,7 @@ public class BiologicaItems {
     public static final RegistrySupplier<BlockItem> LIMESTONE = register(BiologicaBlocks.LIMESTONE);
     public static final RegistrySupplier<BlockItem> LIMESTONE_GRAVEL = register(BiologicaBlocks.LIMESTONE_GRAVEL);
 
-    public static void register() {
+    static void register() {
         ITEMS.register();
     }
 

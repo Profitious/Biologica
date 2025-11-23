@@ -25,7 +25,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
-import xyz.sillyjune.biologica.item.BiologicaItems;
+import xyz.sillyjune.biologica.index.BiologicaItems;
 
 public class CranberryBushBlock extends BushBlock implements BonemealableBlock {
     public static final IntegerProperty AGE;

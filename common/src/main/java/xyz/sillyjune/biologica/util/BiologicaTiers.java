@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 import static net.minecraft.world.item.Items.OBSIDIAN;
-import static xyz.sillyjune.biologica.item.BiologicaItems.CLAW;
+import static xyz.sillyjune.biologica.index.BiologicaItems.CLAW;
 
 public enum BiologicaTiers implements Tier {
     MACUHALUTI_TIER(0, 550, 0.5F, 5.0F, 2, () -> Ingredient.of(OBSIDIAN)),
