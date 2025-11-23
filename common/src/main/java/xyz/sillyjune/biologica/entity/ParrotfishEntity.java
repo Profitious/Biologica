@@ -62,7 +62,7 @@ public class ParrotfishEntity extends AbstractSchoolingFish implements VariantHo
 
     @Override
     public void setVariant(Variant variant) {
-        this.entityData.set(VARIANT, variant.getNetworkId());
+        this.entityData.set(VARIANT, variant.ordinal());
     }
 
     @Override
@@ -101,22 +101,20 @@ public class ParrotfishEntity extends AbstractSchoolingFish implements VariantHo
     }
 
     public enum Variant implements StringRepresentable {
-        BLUNTHEAD(0, "blunthead"),
-        EMBER(1, "ember"),
-        GREENBELLY(2, "greenbelly"),
-        HUMPHEAD(3, "humphead"),
-        QUEEN(4, "queen"),
-        RUSTY(5, "rusty");
+        BLUNTHEAD("blunthead"),
+        EMBER("ember"),
+        GREENBELLY("greenbelly"),
+        HUMPHEAD("humphead"),
+        QUEEN("queen"),
+        RUSTY("rusty");
 
-        private static final IntFunction<Variant> BY_NETWORK_ID = ByIdMap.continuous(Variant::getNetworkId, values(), ByIdMap.OutOfBoundsStrategy.ZERO);
+        private static final IntFunction<Variant> BY_NETWORK_ID = ByIdMap.continuous(Variant::ordinal, values(), ByIdMap.OutOfBoundsStrategy.ZERO);
         private static final Map<String, Variant> BY_ID = Arrays.stream(values()).collect(Collectors.toMap(Variant::getId, Function.identity()));
         public static final Codec<Variant> CODEC = StringRepresentable.fromEnum(Variant::values);
 
-        private final int networkId;
         private final String id;
 
-        Variant(int networkId, String id) {
-            this.networkId = networkId;
+        Variant(String id) {
             this.id = id;
         }
 
@@ -131,10 +129,6 @@ public class ParrotfishEntity extends AbstractSchoolingFish implements VariantHo
         public static Variant getRandom(RandomSource random) {
             Variant[] values = values();
             return values[random.nextInt(values.length)];
-        }
-
-        public int getNetworkId() {
-            return this.networkId;
         }
 
         public String getId() {
