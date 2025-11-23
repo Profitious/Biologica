@@ -2,6 +2,7 @@ package xyz.sillyjune.biologica.client.renderer.entity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import net.minecraft.Util;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
@@ -12,8 +13,13 @@ import xyz.sillyjune.biologica.client.model.BiologicaEntityModelLayers;
 import xyz.sillyjune.biologica.client.model.entity.ParrotfishEntityModel;
 import xyz.sillyjune.biologica.entity.ParrotfishEntity;
 
+import java.util.function.Function;
+
 public class ParrotfishEntityRenderer extends MobRenderer<ParrotfishEntity, ParrotfishEntityModel<ParrotfishEntity>> {
-    private static final ResourceLocation LOCATION = new ResourceLocation(Biologica.MOD_ID, "textures/entity/parrotfish/parrotfish_greenbelly.png");
+    private static final Function<ParrotfishEntity.Variant, ResourceLocation> LOCATION_FACTORY = Util.memoize(variant -> {
+        String path = "textures/entity/parrotfish/parrotfish_" + variant.getId() + ".png";
+        return new ResourceLocation(Biologica.MOD_ID, path);
+    });
 
     public ParrotfishEntityRenderer(EntityRendererProvider.Context context) {
         super(context, new ParrotfishEntityModel<>(context.bakeLayer(BiologicaEntityModelLayers.PARROTFISH)), 0.4f);
@@ -47,6 +53,6 @@ public class ParrotfishEntityRenderer extends MobRenderer<ParrotfishEntity, Parr
 
     @Override
     public ResourceLocation getTextureLocation(ParrotfishEntity entity) {
-        return LOCATION;
+        return LOCATION_FACTORY.apply(entity.getVariant());
     }
 }
