@@ -4,6 +4,7 @@ import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -17,17 +18,19 @@ public final class BiologicaForge {
         IEventBus bus = context.getModEventBus();
         EventBuses.registerModEventBus(Biologica.MOD_ID, bus);
         bus.addListener(this::commonSetup);
+        Biologica.init();
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> BiologicaClient::init);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        Biologica.init();
     }
 
-    @Mod.EventBusSubscriber(modid = Biologica.MOD_ID, value = Dist.CLIENT)
+    //default value of bus is forge, which is not for registry/client setup, so you need to define it manually.
+    @Mod.EventBusSubscriber(modid = Biologica.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            BiologicaClient.init();
+
         }
     }
 }

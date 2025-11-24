@@ -1,5 +1,6 @@
 package xyz.sillyjune.biologica.index;
 
+import dev.architectury.core.item.ArchitecturySpawnEggItem;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
@@ -105,7 +106,7 @@ public class BiologicaItems {
     public static final RegistrySupplier<BlockItem> LIMESTONE = register(BiologicaBlocks.LIMESTONE);
     public static final RegistrySupplier<BlockItem> LIMESTONE_GRAVEL = register(BiologicaBlocks.LIMESTONE_GRAVEL);
 
-    public static final RegistrySupplier<SpawnEggItem> PARROTFISH_SPAWN_EGG = register("parrotfish_spawn_egg", p -> new SpawnEggItem(BiologicaEntityTypes.PARROTFISH.get(), 0, 0, p), new Item.Properties().arch$tab(CreativeModeTabs.SPAWN_EGGS));
+    public static final RegistrySupplier<SpawnEggItem> PARROTFISH_SPAWN_EGG = register("parrotfish_spawn_egg", p -> new ArchitecturySpawnEggItem(BiologicaEntityTypes.PARROTFISH, 0, 0, p), new Item.Properties().arch$tab(CreativeModeTabs.SPAWN_EGGS));
 
     static void register() {
         ITEMS.register();

@@ -6,6 +6,7 @@
   "client": [
   ],
   "mixins": [
+      "OverworldBiomeBuilderMixin"
   ],
   "injectors": {
     "defaultRequire": 1
