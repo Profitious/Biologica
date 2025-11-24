@@ -1,0 +1,30 @@
+package xyz.sillyjune.biologica.index;
+
+import dev.architectury.registry.CreativeTabRegistry;
+import dev.architectury.registry.registries.DeferredRegister;
+import dev.architectury.registry.registries.RegistrySupplier;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+
+import static xyz.sillyjune.biologica.Biologica.MOD_ID;
+import static xyz.sillyjune.biologica.index.BiologicaBlocks.BOSTON_FERN;
+import static xyz.sillyjune.biologica.index.BiologicaBlocks.VOLCANIC_STONE;
+import static xyz.sillyjune.biologica.index.BiologicaItems.MAMMOTH_MEAT;
+import static xyz.sillyjune.biologica.index.BiologicaItems.MARACAS;
+import static xyz.sillyjune.biologica.index.BiologicaItems.OX_HORN;
+
+public class BiologicaCreativeModeTabs {
+    private static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(MOD_ID, Registries.CREATIVE_MODE_TAB);
+
+    public static final RegistrySupplier<CreativeModeTab> FOOD = TABS.register("food", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.food"), () -> new ItemStack(MAMMOTH_MEAT.get())));
+    public static final RegistrySupplier<CreativeModeTab> CRAFTING = TABS.register("crafting", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.crafting"), () -> new ItemStack(OX_HORN.get())));
+    public static final RegistrySupplier<CreativeModeTab> TOOLS = TABS.register("tools", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.tools"), () -> new ItemStack(MARACAS.get())));
+    public static final RegistrySupplier<CreativeModeTab> BLOCKS = TABS.register("blocks", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.blocks"), () -> new ItemStack(VOLCANIC_STONE.get())));
+    public static final RegistrySupplier<CreativeModeTab> NATURE = TABS.register("nature", () -> CreativeTabRegistry.create(Component.translatable("category.biologica.natural"), () -> new ItemStack(BOSTON_FERN.get())));
+
+    static void register() {
+        TABS.register();
+    }
+}

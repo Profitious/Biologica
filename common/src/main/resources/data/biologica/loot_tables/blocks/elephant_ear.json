@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "biologica:blocks/elephant_ear",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "biologica:elephant_ear"
+        }
+      ]
+    }
+  ]
+}

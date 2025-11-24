@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "biologica:block/salt_bush_bottom"
+    },
+    "half=upper": {
+      "model": "biologica:block/salt_bush_top"
+    }
+  }
+}

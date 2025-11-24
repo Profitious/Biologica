@@ -1,0 +1,5 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "biologica:block/jacaranda_leaves"  }
+}

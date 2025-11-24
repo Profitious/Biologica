@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "biologica:blocks/rubber_plant",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "biologica:rubber_plant",
+          "conditions": [
+            {
+              "block": "biologica:rubber_plant",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "biologica:block/rubber_plant_bottom"
+    },
+    "half=upper": {
+      "model": "biologica:block/rubber_plant_top"
+    }
+  }
+}
