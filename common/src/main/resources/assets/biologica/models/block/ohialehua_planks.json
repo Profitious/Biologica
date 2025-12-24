@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "biologica:block/ohialehua_planks"
+    "all": "biologica:block/ohialehuaplanks"
   }
 }

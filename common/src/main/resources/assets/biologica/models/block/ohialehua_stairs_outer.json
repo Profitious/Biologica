@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "biologica:block/ohialeuhaplanks",
+    "top": "biologica:block/ohialeuhaplanks",
+    "side": "biologica:block/ohialeuhaplanks"
+  }
+}
