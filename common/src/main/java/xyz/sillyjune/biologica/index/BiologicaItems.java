@@ -76,6 +76,8 @@ public class BiologicaItems {
     public static final RegistrySupplier<Item> CLAW_SWORD = register("claw_sword", p -> new SwordItem(BiologicaTiers.CLAW_TIER, 0, -2.0f, p), BiologicaCreativeModeTabs.TOOLS);
 
     public static final RegistrySupplier<BlockItem> BOSTON_FERN = register(BiologicaBlocks.BOSTON_FERN, BiologicaCreativeModeTabs.NATURE);
+
+    public static final RegistrySupplier<BlockItem> BLOODROOT = register(BiologicaBlocks.BLOODROOT, BiologicaCreativeModeTabs.NATURE);
     public static final RegistrySupplier<BlockItem> BLUE_BONNET = register(BiologicaBlocks.BLUE_BONNET, BiologicaCreativeModeTabs.NATURE);
     public static final RegistrySupplier<BlockItem> HELICONIA = register(BiologicaBlocks.HELICONIA, BiologicaCreativeModeTabs.NATURE);
     public static final RegistrySupplier<BlockItem> PEACE_LILY = register(BiologicaBlocks.PEACE_LILY, BiologicaCreativeModeTabs.NATURE);
