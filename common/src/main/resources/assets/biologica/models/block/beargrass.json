@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "cutout",
   "textures": {
-    "cross": "biologica:block/bloodroot"
+    "cross": "biologica:block/beargrass"
   }
 }
